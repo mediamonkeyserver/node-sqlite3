@@ -1,8 +1,8 @@
 {
-  "name": "sqlite3",
+  "name": "@mms/sqlite3",
   "description": "Asynchronous, non-blocking SQLite3 bindings",
   "version": "3.1.13",
-  "homepage": "http://github.com/mapbox/node-sqlite3",
+  "homepage": "https://github.com/mediamonkeyserver/node-sqlite3",
   "author": {
     "name": "MapBox",
     "url": "https://mapbox.com/"
@@ -10,8 +10,8 @@
   "binary": {
     "module_name": "node_sqlite3",
     "module_path": "./lib/binding/{node_abi}-{platform}-{arch}",
-    "host": "https://mapbox-node-binary.s3.amazonaws.com",
-    "remote_path": "./{name}/v{version}/{toolset}/",
+    "host": "https://www.mediamonkey.com",
+    "remote_path": "./beta/mms/sqlite/",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz"
   },
   "contributors": [
@@ -34,19 +34,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mapbox/node-sqlite3.git"
-  },
-  "dependencies": {
-    "nan": "~2.8.0",
-    "node-pre-gyp": "~0.6.38"
+    "url": "https://github.com/mediamonkeyserver/node-sqlite3.git"
   },
   "bundledDependencies": [
-    "node-pre-gyp"
   ],
   "devDependencies": {
-    "aws-sdk": "2.x",
     "eslint": "3.5.0",
-    "mocha": "3.x"
+    "mocha": "3.x",
+    "node-pre-gyp": "~0.6.38",
+    "nan": "~2.8.0"
   },
   "scripts": {
     "prepublishOnly": "npm ls",
