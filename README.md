@@ -1,3 +1,5 @@
+A (temporary?) fork of sqlite3 module to handle some specifics of mediamonkey server.
+
 Asynchronous, non-blocking [SQLite3](http://sqlite.org/) bindings for [Node.js](http://nodejs.org/).
 
 [![NPM](https://nodei.co/npm/sqlite3.png?downloads=true&downloadRank=true)](https://nodei.co/npm/sqlite3/)
